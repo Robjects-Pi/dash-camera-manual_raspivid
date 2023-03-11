@@ -2,7 +2,7 @@
 #exports the variables folders containing logs and recordings/videos
 export folder_path="/home/piDash/Desktop/Videos/recordings/finished"
 export log_file_path="/home/piDash/Desktop/Videos/recordings/dashcam.log"
-export video_file_path="/home/piDash/Desktop/Videos/recordings/started"
+export video_file_path="/home/piDash/Desktop/Videos/recordings/dashcam.flv"
 
 
 # set variable to form the date variable
