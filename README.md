@@ -9,6 +9,11 @@
     - startdashcam.sh: script that runs "dashcam.sh" script
     - stopdashcam.sh
     - upload_files.sh
+## config:
+    installation: 
+        - enable camera legacy stack:
+            $ sudo raspi-config
+            (interface options, enable legacy camera, reboot rpi)
 ## how to run
     - To start dashcam (without boot startup), just run startdashcam.sh script:
         $ /bin/bash /home/piDash/piZero/dashcam.sh
