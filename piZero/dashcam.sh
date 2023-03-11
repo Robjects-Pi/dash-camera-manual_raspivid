@@ -1,8 +1,8 @@
 #!/bin/bash
 #exports the variables folders containing logs and recordings/videos
-export folder_path="~/Desktop/Videos/recordings/finished"
-export log_file_path="~/Desktop/Videos/recordings/dashcam.log"
-export video_file_path="~/Desktop/Videos/recordings/started"
+export folder_path="/home/piDash/Desktop/Videos/recordings/finished"
+export log_file_path="/home/piDash/Desktop/Videos/recordings/dashcam.log"
+export video_file_path="/home/piDash/Desktop/Videos/recordings/started"
 
 
 # set variable to form the date variable
@@ -28,7 +28,7 @@ else
 fi
 
 # log to dashcam.log every time the service is started 
-echo "Started video at: $when" >> $video_file_path
+echo "Started video at: $when" >> $log_file_path
 
 # record at 1024x760 with a Desktop preview window of 640x480, pipe to ffmpeg and output dashcam.flv 
 raspivid -t 0 -w 1024 -h 760 -fps 25 -b 5000000 -p 0,0.640,480 -vf -o - | ffmpeg -i - -vcodec copy -an -f flv -r 25 -pix_fmt yuv420p $video_file_path -y
