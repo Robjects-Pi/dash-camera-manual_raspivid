@@ -1,8 +1,8 @@
 #!/bin/bash
 #exports the variables folders containing logs and recordings/videos
-export folder_path="/home/pi/Desktop/Videos/finished"
-export log_file_path="/home/pi/Desktop/Videos/recordings/dashcam.log"
-export video_file_path="/home/pi/Desktop/Videos/started"
+export folder_path="~/Desktop/Videos/recordings/finished"
+export log_file_path="~/Desktop/Videos/recordings/dashcam.log"
+export video_file_path="~/Desktop/Videos/recordings/started"
 
 
 # set variable to form the date variable

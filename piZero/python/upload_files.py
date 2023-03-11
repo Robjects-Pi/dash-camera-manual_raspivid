@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 import sys
-sys.path.insert(0, '/mnt/c/Users/Mike/Documents/esp/dashCam/pi-code/piZero/python/test')
+sys.path.insert(0, '/mnt/c/Users/Mike/Documents/esp/dashCam/piDash/piZero/python/test')
 #user config
 from myconfig import *
 #print(piDash0_USBPath)
@@ -11,7 +11,7 @@ import subprocess
 import os
 import shutil
 
-ROOT_PATH = os.getenv("ROOT_PATH", "/home/pi")
+ROOT_PATH = os.getenv("ROOT_PATH", "/home/piDash")
 RECORDINGS_PATH = os.getenv("RECORDINGS_PATH", "Desktop/Videos/recordings")
 UPLOADED_RECORDINGS_PATH = os.getenv("UPLOADED_RECORDINGS_PATH", "uploaded")
 PERCENTAGE_THRESHOLD = 25.0
