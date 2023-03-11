@@ -1,13 +1,14 @@
 #!/bin/bash
-export folder_path="/home/pi/Desktop/Videos/recordings"
+#exports the variables folders containing logs and recordings/videos
+export folder_path="/home/pi/Desktop/Videos/finished"
 export log_file_path="/home/pi/Desktop/Videos/recordings/dashcam.log"
-export video_file_path="/home/pi/Desktop/Videos/recordings"
+export video_file_path="/home/pi/Desktop/Videos/started"
 
 
-# set variable form the date 
+# set variable to form the date variable
 when=$(date)
 
-# make sure dashcam.log is present touch dashcam.log
+# checks if dashcam.log is present,if not touch dashcam.log
 echo "looking for log file"
 if [ -e $log_file_path ]
 then
@@ -16,7 +17,7 @@ else
     echo "no dashcam log file \n creating one now"
     touch  $log_file_path
 fi
-# mv the current video to the same name but with the date added  
+# appends the date to the previous video in file system that finished recording to the same name 
 if [ -e $video_file_path ]
 then
     echo "found previous recording"
