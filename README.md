@@ -11,7 +11,7 @@
     - upload_files.sh
 ## how to run
     - To start dashcam (without boot startup), just run startdashcam.sh script:
-        $ /bin/bash /home/pi/piDash/dashcam.sh
+        $ /bin/bash /home/piDash/piZero/dashcam.sh
     - Starting on boot (two options explained): 
         1. using Systemd: to automatically start startdashcam.sh when pi boots up, attach dashcam.service to /etc/systemd/system/.
         2. Using .bashrc.local: On your pi, edit /etc/rc.local with root permissions. 

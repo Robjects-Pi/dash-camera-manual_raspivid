@@ -1,3 +1,3 @@
 #!/bin/bash
 
-/bin/python ~/Desktop/piDash/piZero/python/upload_files.py
+/bin/python /home/piDash/piDash/piZero/python/upload_files.py
