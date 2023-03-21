@@ -5,35 +5,24 @@
 ![Github code size badge](https://img.shields.io/github/languages/code-size/garzarobm/piDash?style=for-the-badge)
 ![Github license badge](https://img.shields.io/github/license/garzarobm/piDash?style=for-the-badge)
 
-piDash is built and managed by garzarobm and ZuesSSSSS. Open Source raspberry pi webcam. TODO: Working on selling commercial units in the future.. (always open source)
+An open-source Rapsberry Pi Dashcam.
 
-## Raspberry Pi Zero
+<!-- ## Functionalities
 
-    - services
-        - dashcam.service: 
-        - upload.service:
-    - dashcam.sh: 
-    - shutdown.sh
-    - startdashcam.sh: script that runs "dashcam.sh" script
-    - stopdashcam.sh
-    - upload_files.sh
+- [x] Records on boot
+- [ ] Web accessible file video capability
+- [ ] Easy Backup (Cloud + Local Options / Integrations)
 
-## Config
+## Setup
 
-    installation: 
-        - enable camera legacy stack:
-            $ sudo raspi-config
-            (interface options, enable legacy camera, reboot rpi)
+Edit `config.ini`
 
-## To run
+#### **Type | Default**
 
-    - To start dashcam (without boot startup), just run startdashcam.sh script:
-        $ /bin/bash /home/piDash/piZero/dashcam.sh
-    - Starting on boot (two options explained): 
-        1. using Systemd: to automatically start startdashcam.sh when pi boots up, attach dashcam.service to /etc/systemd/system/.
-        2. Using .bashrc.local: On your pi, edit /etc/rc.local with root permissions. 
-            $ sudo nano rc.local
-        attach /bin/bash
-        3. crontab, rc.local, etc: In addition to the two option listed above, you can utilize more methods to run dashcam automatically, feel free to research how to implement the script corresponding to implementation used.
-
-    3. same applies to the upload service.
+- Resolution (default 720p)
+- Framerate (default 30fps)
+- Export (default #TODO: Determine a better place than `./recordings/`) -->
+<!-- - Max. days of video (default 7 days)
+- Max. percent of storage (default 85% of total storage)
+    - Note: Recordings will be Overwritten / Deleted
+- Min. percent of storage (default ) -->
