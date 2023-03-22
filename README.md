@@ -1,3 +1,12 @@
+#STRUCTURE TO BE IMPLEMENTED: 
+    - what it contains
+    - how to use it
+    - and any limitations or requirements.
+    - instructions for installation
+    - usage
+    - and troubleshooting.
+
+
 # piDash
 
 ## piZero
