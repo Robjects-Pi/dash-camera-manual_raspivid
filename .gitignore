@@ -127,3 +127,5 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+piZero/python/upload_files.py
+piZero/upload_files.sh
