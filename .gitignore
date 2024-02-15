@@ -129,3 +129,4 @@ dmypy.json
 .pyre/
 piZero/python/upload_files.py
 piZero/upload_files.sh
+.DS_Store
