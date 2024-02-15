@@ -5,7 +5,7 @@
 ![Github code size badge](https://img.shields.io/github/languages/code-size/garzarobm/piDash?style=for-the-badge)
 ![Github license badge](https://img.shields.io/github/license/garzarobm/piDash?style=for-the-badge)
 
-piDash is built and managed by garzarobm and ZuesSSSSS. Open Source raspberry pi webcam. TODO: Working on selling commercial units in the future.. (always open source)
+
 
 ## Raspberry Pi Zero
 
