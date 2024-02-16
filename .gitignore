@@ -133,3 +133,4 @@ piZero/upload_files.sh
 piZero/rsync/bash/autosync.sh
 piZero/python/config.py
 piZero/python/secrets.env
+.DS_Store
