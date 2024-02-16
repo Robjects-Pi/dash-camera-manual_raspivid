@@ -130,3 +130,6 @@ dmypy.json
 piZero/python/upload_files.py
 piZero/upload_files.sh
 .DS_Store
+piZero/rsync/bash/autosync.sh
+piZero/python/config.py
+piZero/python/secrets.env

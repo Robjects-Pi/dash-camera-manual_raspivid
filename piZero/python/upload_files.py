@@ -17,6 +17,8 @@ UPLOADED_RECORDINGS_PATH = os.getenv("UPLOADED_RECORDINGS_PATH", "uploaded")
 PERCENTAGE_THRESHOLD = 25.0
 
 '''
+#checking if there is enough space
+
 statvfs = os.statvfs(ROOT_PATH)
 
 free_bytes = statvfs.f_frsize * statvfs.f_bfree
