@@ -135,4 +135,4 @@ piZero/python/config.py
 piZero/python/secrets.env
 .DS_Store
 piZero/python/upload_files.py
-.*
+*.*
