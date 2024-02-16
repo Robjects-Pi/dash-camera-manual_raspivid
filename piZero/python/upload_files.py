@@ -16,7 +16,6 @@ RECORDINGS_PATH = os.getenv("RECORDINGS_PATH", "Desktop/Videos/recordings")
 UPLOADED_RECORDINGS_PATH = os.getenv("UPLOADED_RECORDINGS_PATH", "uploaded")
 PERCENTAGE_THRESHOLD = 25.0
 
-'''
 #checking if there is enough space
 
 statvfs = os.statvfs(ROOT_PATH)
@@ -25,9 +24,9 @@ free_bytes = statvfs.f_frsize * statvfs.f_bfree
 total_bytes = statvfs.f_frsize * statvfs.f_blocks
 
 free_bytes_percentage = ((1.0 * free_bytes) / total_bytes) * 100
+if free_bytes_percentage < PERCENTAGE_THRESHOLD:
 
-#if free_bytes_percentage < PERCENTAGE_THRESHOLD:
-'''
+'
 #getting local recordings path
 recordings_path = os.path.join(ROOT_PATH, RECORDINGS_PATH)
 
@@ -44,10 +43,10 @@ print(recordings)
 #nc = nextcloud_client.Client('http://drive.finishyourproduct.com/nextcloud')
 #nc = nextcloud_client.Client('https://192.168.1.213/nextcloud')
 #nc.login(username, password)
-nc = nextcloud_client.Client(driveUrl)
+""" nc = nextcloud_client.Client(driveUrl)
 print("logging in")
 nc.login(piDash0_username, piDash0_pass)
-print("logged in\n")
+print("logged in\n") """
 
 for file_info in recordings:
     local_file_path=file_info[0]
