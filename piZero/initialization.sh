@@ -1,1 +1,2 @@
+# This script is used to initialize the piZero for the first time
 mkdir -p /home/piDash/Desktop/Videos/recordings/finished && mkdir -p /home/piDash/Desktop/Videos/recordings/started && sudo chmod 777 startdashcam.sh shutdown.sh stopdashcam.sh upload_files.sh dashcam.sh services/dashcam.service services/upload.service initialization.sh
