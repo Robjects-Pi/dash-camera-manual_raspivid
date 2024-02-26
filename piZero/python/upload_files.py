@@ -11,13 +11,18 @@ import subprocess
 import os
 import shutil
 
+# These are the parameters that are used to connect to the nextcloud server
+#driveUrl = "http://drive.finishyourproduct.com/nextcloud/[place_username]/[place_endpoint]"
+#username = "[place_username]"
+#password = "[place_password]"
+#piDash0_USBPath = "/[place_username]/files/piDash0"
 ROOT_PATH = os.getenv("ROOT_PATH", "/home/piDash")
 RECORDINGS_PATH = os.getenv("RECORDINGS_PATH", "Desktop/Videos/recordings")
 UPLOADED_RECORDINGS_PATH = os.getenv("UPLOADED_RECORDINGS_PATH", "uploaded")
 PERCENTAGE_THRESHOLD = 25.0
 
 #checking if there is enough space
-
+#https://stackoverflow.com/questions/5165817/how-to-get-total-file-system-capacity-size-using-python
 statvfs = os.statvfs(ROOT_PATH)
 
 free_bytes = statvfs.f_frsize * statvfs.f_bfree
@@ -26,7 +31,7 @@ total_bytes = statvfs.f_frsize * statvfs.f_blocks
 free_bytes_percentage = ((1.0 * free_bytes) / total_bytes) * 100
 if free_bytes_percentage < PERCENTAGE_THRESHOLD:
 
-'
+
 #getting local recordings path
 recordings_path = os.path.join(ROOT_PATH, RECORDINGS_PATH)
 
