@@ -53,6 +53,7 @@ print("logging in")
 nc.login(piDash0_username, piDash0_pass)
 print("logged in\n") """
 
+#uploading files
 for file_info in recordings:
     local_file_path=file_info[0]
     file_name= str(file_info[0]).split("/",-1)[-1]
