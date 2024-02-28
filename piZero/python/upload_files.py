@@ -32,7 +32,7 @@ free_bytes_percentage = ((1.0 * free_bytes) / total_bytes) * 100
 if free_bytes_percentage < PERCENTAGE_THRESHOLD:
     #getting local recordings path
     recordings_path = os.path.join(ROOT_PATH, RECORDINGS_PATH)
-    
+
 recordings = []
 for dir_name in os.listdir(recordings_path):
     recording_path = os.path.join(recordings_path, dir_name)
@@ -43,8 +43,8 @@ recordings.sort(key=lambda tup: tup[1])
 print(recordings)
 
 #nextcloud login
-#nc = nextcloud_client.Client('http://drive.finishyourproduct.com/nextcloud')
-#nc = nextcloud_client.Client('https://192.168.1.213/nextcloud')
+#nc = nextcloud_client.Client('https://[your_remote_address]/nextcloud')
+#nc = nextcloud_client.Client('http://[your_local_address]/nextcloud')
 #nc.login(username, password)
 """ nc = nextcloud_client.Client(driveUrl)
 print("logging in")
