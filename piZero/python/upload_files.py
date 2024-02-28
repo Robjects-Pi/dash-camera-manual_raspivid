@@ -30,11 +30,9 @@ total_bytes = statvfs.f_frsize * statvfs.f_blocks
 
 free_bytes_percentage = ((1.0 * free_bytes) / total_bytes) * 100
 if free_bytes_percentage < PERCENTAGE_THRESHOLD:
-
-
-#getting local recordings path
-recordings_path = os.path.join(ROOT_PATH, RECORDINGS_PATH)
-
+    #getting local recordings path
+    recordings_path = os.path.join(ROOT_PATH, RECORDINGS_PATH)
+    
 recordings = []
 for dir_name in os.listdir(recordings_path):
     recording_path = os.path.join(recordings_path, dir_name)
@@ -80,7 +78,9 @@ for file_info in recordings:
         print("skipping file/folder " + file_name +   " with file_ending: " + local_file_path  + "\n\n\n")
 
    
-    '''
+#nc.logout()
+        
+    #print("dir_path" + local_dir_path)
     for file_name in os.listdir(recordingFolder[0]):
         #cloud_path = os.path.join(piDash0_USBPath,recordingFolder[0],file_name)
         
@@ -89,6 +89,7 @@ for file_info in recordings:
         print("dir_path" + local_dir_path)
 
         #placing file in
+        #nc.put_file(piDash0_USBPath+"/" + file_path, local_dir_path)
         nc.put_file(piDash0_USBPath+"/" + file_path, local_dir_path)
 
 
@@ -110,9 +111,9 @@ for file_info in recordings:
         #link_info = nc.share_file_with_link(cloud_path+".zip")
         #print("Here is your link:"  + link_info.get_link())
 
+        #moving file to uploaded folder
         finished_dir_path=os.path.join(ROOT_PATH,RECORDINGS_PATH,UPLOADED_RECORDINGS_PATH, recordingFolder[0])
         os.mkdir(finished_dir_path)
         print("created dir " + finished_dir_path)
         subprocess.call(["mv", pi_path, finished_pi_path])
         print("placed" + file_name + "in cloud") 
-    '''
