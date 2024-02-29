@@ -46,7 +46,7 @@ print(recordings)
 #nc = nextcloud_client.Client('https://[your_remote_address]/nextcloud')
 #nc = nextcloud_client.Client('http://[your_local_address]/nextcloud')
 #nc.login(username, password)
-""" nc = nextcloud_client.Client(driveUrl)
+""" nc = nextcloud_client.Client([your_remote_address])
 print("logging in")
 nc.login(piDash0_username, piDash0_pass)
 print("logged in\n") """
